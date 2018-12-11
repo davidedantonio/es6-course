@@ -1,0 +1,6 @@
+let myArray = [1, 2, 3];
+let a, b, c;
+
+[a, b, c] = myArray; //array destructuring assignment syntax
+
+console.log(a, b, c);
