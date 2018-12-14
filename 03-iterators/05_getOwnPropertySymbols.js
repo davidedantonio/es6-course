@@ -1,0 +1,10 @@
+let obj = {a: 12};
+let s1 = Symbol("mySymbol");
+let s2 = Symbol("mySymbol");
+
+Object.defineProperty(obj, s1, {
+  enumerable: false
+});
+
+obj[s2] = "";
+console.log(Object.getOwnPropertySymbols(obj));
